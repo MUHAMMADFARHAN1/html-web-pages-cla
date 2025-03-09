@@ -6,77 +6,147 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <p>
-        <img src="./assets/logo.svg" alt="logo" /> <br />
-        CodeCLA
-      </p>
-      <div>
-        <a href="./Signup_Page.html">For Coders</a
-        ><a href="./Signin_Page.html">For Developers</a>
-      </div>
-      <a href="./Signup_Page.html"><button>Join Now</button></a>
+    <header id="HEADER">
+      <nav id="NAVBAR">
+        <div style="display: flex; flex-direction: row">
+          <img src="./assets/logo.svg" alt="logo" />
+          <p style="padding-top: 22px">CLA</p>
+        </div>
+        <div style="padding-top: 22px; padding-left: 520px">
+          <a href="./Signup_Page.html" style="padding-right: 40px">For Coders</a
+          ><a href="./Signin_Page.html">For Developers</a>
+        </div>
+        <div>
+          <a href="./Signup_Page.html"
+            ><button style="margin-top: 18px; padding: 5px 10px 5px 10px">
+              Join Now
+            </button></a
+          >
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <h3>The Place for Competitive Programmers</h3>
+    <main id="HERO">
+      <h1 style="margin-left: 170px">The Place for Competitive Programmers</h1>
       <p>
         CodeCLA is where programmers participate in programming contests, solve
         algorithms and data structure challenges and become a part of an awesome
         community
       </p>
-      <a href="./Signup_Page.html">
-        <input type="button" name="button" value="Become a coder"
-      /></a>
-      <!-- <button>Become a coder</button> -->
-      <button>Become a manager</button>
+      <div style="display: flex; flex-direction: row; margin-left: 380px">
+        <a href="./Signup_Page.html">
+          <input
+            type="button"
+            name="button"
+            value="Become a coder"
+            style="padding: 5px 10px 5px 10px"
+        /></a>
+        <button style="margin-left: 20px; padding: 5px 10px 5px 10px">
+          Become a manager
+        </button>
+      </div>
     </main>
-    <section>
-      <h3>Practice to level-up</h3>
 
-      <p>
-        1K <br />Problems for Practice <br />
-        100+ <br />
-        Coders <br />
-        10 <br />
-        Programming Languages <br />
-        130K <br />
-        Submissions
-      </p>
+    <section id="SECTION2">
+      <h3 style="margin-left: 450px">Practice to level-up</h3>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          margin-left: 400px;
+        "
+      >
+        <div style="display: flex; flex-direction: row; gap: 20px">
+          <p style="background-color: white; padding: 10px 10px 10px 10px">
+            1K <br />Problems for Practice <br />
+          </p>
+          <p
+            style="
+              background-color: white;
+              padding: 10px 10px 10px 10px;
+              margin-left: 10px;
+            "
+          >
+            100+ <br />Coders <br />
+          </p>
+        </div>
+        <!-- <div style="display: flex; flex-direction: row; gap: 20px"> -->
+        <div
+          style="
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 1;
+          "
+        >
+          <p style="background-color: white; margin-bottom: 100px">
+            10 <br />Programming Languages <br />
+          </p>
+          <p style="background-color: white; margin-bottom: 70px">
+            130K <br />Submissions
+          </p>
+        </div>
+      </div>
     </section>
-    <section>
+
+    <section id="SECTION3">
       <h3>For coders</h3>
       <h3>What you will gain</h3>
       <p>
         You are a coder who wants to level up his skills in coding and problem
         solving?. Here what we provide
       </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Rich practice set of problems <br />
-        Access a rich library of practice problems, algorithms, and data
-        structures to enhance your skills
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Universal contests <br />
-        Compete in regularly scheduled contests against top talent from around
-        the globe
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Constant feedback <br />Receive personalized insights and feedback to
-        improve your problem-solving abilities
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Sharing is caring <br />Connect with like-minded individuals, form
-        teams, and tackle challenges together
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>Track your progress and climb the ranks on our leaderbaord</p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>Detailed solutions for problems</p>
+      <div style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: row">
+          <div style="border-style: outset; border-color: black">
+            <img src="./assets/ok.svg" alt="" />
+            <p>
+              Rich practice set of problems <br />
+              Access a rich library of practice problems, algorithms, and data
+              structures to enhance your skills
+            </p>
+          </div>
+          <div style="border-style: outset; border-color: black">
+            <img src="./assets/ok.svg" alt="" />
+            <p>
+              Universal contests <br />
+              Compete in regularly scheduled contests against top talent from
+              around the globe
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row">
+          <div style="border-style: outset; border-color: black">
+            <img src="./assets/ok.svg" alt="" />
+            <p>
+              Constant feedback <br />Receive personalized insights and feedback
+              to improve your problem-solving abilities
+            </p>
+          </div>
+          <div style="margin-left: 65px">
+            <img src="./assets/ok.svg" alt="" />
+            <p>
+              Sharing is caring <br />Connect with like-minded individuals, form
+              teams, and tackle challenges together
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row">
+          <div style="border-style: outset; border-color: black">
+            <img src="./assets/ok.svg" alt="" />
+            <p>Track your progress and climb the ranks on our leaderboard</p>
+          </div>
+          <div style="margin-left: 230px">
+            <img src="./assets/ok.svg" alt="" />
+            <p>Detailed solutions for problems</p>
+          </div>
+        </div>
+      </div>
+
       <a href="./Signup_Page.html">
         <input
           type="button"
@@ -86,66 +156,90 @@
         />
       </a>
     </section>
-    <section>
+
+    <section id="SECTION4">
       <h3>For managers</h3>
       <h3>Access high-professional platform for coding challenges design</h3>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Craft tailored coding challenges suited to your specific needs and
-        objectives
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Design challenges taht aligns perfectly with your recruitment criteria
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Choose from a wide range of problem types including algorithmic, data
-        structures, puzzles, and more
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>Ergonomic tools for challenges design</p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>
-        Collaborate with colleagues or peers in creating and refining coding
-        challenges
-      </p>
-      <img src="./assets/ok.svg" alt="" />
-      <p>Access deicated support from our team of experts</p>
+
+      <div style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: row">
+          <img src="./assets/ok.svg" alt="" />
+          <p>
+            Craft tailored coding challenges suited to your specific needs and
+            objectives
+          </p>
+          <img src="./assets/ok.svg" alt="" />
+          <p>
+            Design challenges taht aligns perfectly with your recruitment
+            criteria
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <img src="./assets/ok.svg" alt="" />
+          <p>
+            Choose from a wide range of problem types including algorithmic,
+            data structures, puzzles, and more
+          </p>
+          <img src="./assets/ok.svg" alt="" />
+          <p>Ergonomic tools for challenges design</p>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <img src="./assets/ok.svg" alt="" />
+          <p>
+            Collaborate with colleagues or peers in creating and refining coding
+            challenges
+          </p>
+          <img src="./assets/ok.svg" alt="" />
+          <p>Access deicated support from our team of experts</p>
+        </div>
+      </div>
       <button>Join Managers community</button> <br />
     </section>
-    <section>
-      <img src="./assets/logo.svg" alt="Logo" />
-      <h3>Brought to you by CLA</h3>
-      <p>
-        Join the Ultimate Hub for Competitive Programmers and reach growth and
-        excellence in competitive programming.
-      </p>
-      <p>
-        Coding challenges is made simple by our platform. Access a dashboard of
-        tools for high-quality challenges design
-      </p>
+
+    <section id="SECTION5">
+      <div style="display: flex; flex-direction: row">
+        <div style="width: 505px; height: 600px; overflow: hidden">
+          <img src="./assets/team.svg" alt="" />
+        </div>
+        <div>
+          <img src="./assets/logo.svg" alt="Logo" />
+          <h3>Brought to you by CLA</h3>
+          <p>
+            Join the Ultimate Hub for Competitive Programmers and reach growth
+            and excellence in competitive programming.
+          </p>
+          <p>
+            Coding challenges is made simple by our platform. Access a dashboard
+            of tools for high-quality challenges design
+          </p>
+        </div>
+      </div>
     </section>
-    <section>
+
+    <section id="SECTION6">
       <h3>Testimonials</h3>
-      <p>
-        This platform is an absolute game-changer for competitive programmers.
-        The extensive range of problems and challenges offered here truly hones
-        your skills and prepares you for any coding competition. With detailed
-        solutions and an active community, it's the perfect environment to
-        sharpen your coding prowess.
-      </p>
-      <img
-        src="https://randomuser.me/api/portraits/women/44.jpg"
-        alt="june pic"
-      />
-      <p><b>June Cha</b></p>
-      <p>Software Engineer</p>
+      <div style="background-color: white; width: 300px; height: 350px">
+        <p>
+          This platform is an absolute game-changer for competitive programmers.
+          The extensive range of problems and challenges offered here truly
+          hones your skills and prepares you for any coding competition. With
+          detailed solutions and an active community, it's the perfect
+          environment to sharpen your coding prowess.
+        </p>
+        <img
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          alt="june pic"
+          style="border-radius: 80px"
+        />
+        <p><b>June Cha</b></p>
+        <p>Software Engineer</p>
+      </div>
     </section>
-    <footer>
-      <h2>Contact us</h2>
+
+    <footer id="FOOTER">
+      <h2 style="margin-left: 500px">Contact us</h2>
       <!-- Implicit an dExplicit input change -->
-      <form action="">
+      <form action="" style="margin-left: 90px; margin-top: 40px">
         <label>
           Name <br /><input
             type="text"
@@ -164,14 +258,93 @@
         <!-- <label for="Message">Message</label> <br /> -->
         <label>
           Message <br />
-          <input type="text" name="text" id="txt" placeholder="Your Message" />
+          <input
+            type="text"
+            name="text"
+            id="txt"
+            placeholder="Your Message"
+            style="padding-bottom: 60px" />
           <br
         /></label>
         <!-- <input type="text" name="text" id="txt" placeholder="Your Message" />
-      <br /> -->
+       <br /> -->
         <button>Submit</button>
       </form>
-      <p>© 2024 Your Competitive Programming Platform. All rights reserved.</p>
+      <p style="margin-left: 550px">
+        © 2024 Your Competitive Programming Platform. All rights reserved.
+      </p>
     </footer>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Overpass;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+
+      #HEADER {
+        height: 80px;
+        margin-left: 40px;
+        margin-right: 415px;
+      }
+
+      #HERO {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        background-image: url("assets/bg.svg");
+        margin-left: 50px;
+        margin-top: 120px;
+        gap: 15px;
+      }
+
+      #SECTION2 {
+        height: 300px;
+        background-color: #f4f4f4;
+      }
+
+      #SECTION3 {
+        height: 500px;
+        background-color: #f4f4f4;
+      }
+
+      #SECTION4 {
+        height: 500px;
+        background-color: #f4f4f4;
+      }
+
+      #SECTION5 {
+        height: 600px;
+        background-color: #f4f4f4;
+      }
+
+      #SECTION6 {
+        height: 400px;
+        background-color: #f4f4f4;
+      }
+
+      #FOOTER {
+        height: 300px;
+        background-color: #23155b;
+        border-top-left-radius: 30%;
+      }
+
+      #NAVBAR {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      a {
+        color: black;
+      }
+    </style>
   </body>
 </html>
