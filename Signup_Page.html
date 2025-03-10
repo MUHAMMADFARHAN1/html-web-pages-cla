@@ -6,15 +6,100 @@
     <title>Document</title>
   </head>
   <body>
-    <img src="./assets/coding.png" alt="coding guy" width="250" />
-    <h2>Join Coders Now!</h2>
-    <form action="">
-      <input type="text" name="First Name" required placeholder="First Name" />
-      <input type="text" name="Last Name" required placeholder="Last Name" />
-      <input type="email" name="email" required placeholder="Email" />
-      <input type="password" name="password" required placeholder="Password" />
-      <button>Sign Up</button>
-    </form>
-    <p>Already have an account? <a href="./Signin_Page.html">Login</a></p>
+    <div style="display: flex; flex-direction: row">
+      <div id="First">
+        <img src="./assets/coding.png" alt="coding guy" width="350" />
+      </div>
+      <div id="Second">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 40%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 150px 10px 10px 220px;
+            gap: 10px;
+          "
+        >
+          <h2 style="margin-left: 55px">Join Coders Now!</h2>
+          <form
+            action=""
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 250px;
+              height: 210px;
+              margin-left: 25px;
+            "
+          >
+            <input
+              type="text"
+              name="First Name"
+              required
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="Last Name"
+              required
+              placeholder="Last Name"
+            />
+            <input type="email" name="email" required placeholder="Email" />
+            <input
+              type="password"
+              name="password"
+              required
+              placeholder="Password"
+            />
+            <button>Sign Up</button>
+          </form>
+          <p style="margin-left: 50px">
+            Already have an account? <a href="./Signin_Page.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Overpass;
+        overflow-x: hidden;
+      }
+
+      #First {
+        width: 50%;
+        height: 729px;
+        background-color: #23155b;
+      }
+
+      #Second {
+        width: 50%;
+      }
+
+      img {
+        margin-left: 200px;
+        margin-top: 150px;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+
+      input {
+        background-color: #23155b;
+        padding: 8px 8px 8px 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 5px;
+      }
+    </style>
   </body>
 </html>

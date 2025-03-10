@@ -6,13 +6,47 @@
     <title>Document</title>
   </head>
   <body>
-    <img src="./assets/coding.png" alt="Coder Picture" width="250" />
-    <h2>Login Now!</h2>
-    <form action="">
-      <input type="Email" required placeholder="Email" />
-      <input type="password" required placeholder="Password" />
-      <button>Sign In</button>
-    </form>
-    <p>New to CodeCLA? <a href="./Signup_Page.html">Sign Up</a></p>
+    <div style="display: flex; flex-direction: row">
+      <div id="First">
+        <img src="./assets/coding.png" alt="Coder Picture" width="350" />
+      </div>
+      <div id="Second">
+        <h2>Login Now!</h2>
+        <form action="">
+          <input type="Email" required placeholder="Email" />
+          <input type="password" required placeholder="Password" />
+          <button>Sign In</button>
+        </form>
+        <p>New to CodeCLA? <a href="./Signup_Page.html">Sign Up</a></p>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Overpass;
+        overflow-x: hidden;
+      }
+      #First {
+        width: 50%;
+        height: 729px;
+        background-color: #23155b;
+      }
+
+      #Second {
+        width: 50%;
+      }
+
+      img {
+        margin-left: 200px;
+        margin-top: 150px;
+      }
+
+      body {
+        background-color: #f4f4f4;
+      }
+    </style>
   </body>
 </html>
