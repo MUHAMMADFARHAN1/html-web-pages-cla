@@ -96,7 +96,7 @@
           style="
             display: grid;
             gap: 30px;
-            grid-template-columns: 339px 328px;
+            grid-template-columns: 356px 328px;
             grid-template-rows: 160px;
           "
         >
@@ -255,6 +255,8 @@
           name="coders"
           placeholder="Join coders community"
           value="Join coders community"
+          id="coder_button"
+          style="margin-top: 10px"
         />
       </a>
     </section>
@@ -266,7 +268,7 @@
       </h2>
 
       <div style="display: flex; flex-direction: column; gap: 15px">
-        <div style="display: flex; flex-direction: row; gap: 35px">
+        <div style="display: flex; flex-direction: row; gap: 30px">
           <div
             style="
               display: flex;
@@ -274,7 +276,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 130px 10px 10px;
+              padding: 10px 150px 10px 10px;
             "
           >
             <div>
@@ -292,7 +294,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 70px 10px 10px;
+              padding: 10px 90px 10px 10px;
             "
           >
             <div>
@@ -305,7 +307,7 @@
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: row; gap: 35px">
+        <div style="display: flex; flex-direction: row; gap: 30px">
           <div
             style="
               display: flex;
@@ -313,7 +315,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 90px 10px 10px;
+              padding: 10px 110px 10px 10px;
             "
           >
             <div>
@@ -332,7 +334,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 265px 10px 10px;
+              padding: 15px 310px 10px 10px;
             "
           >
             <div>
@@ -344,7 +346,7 @@
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: row; gap: 35px">
+        <div style="display: flex; flex-direction: row; gap: 30px">
           <div
             style="
               display: flex;
@@ -352,7 +354,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 113px 10px 10px;
+              padding: 10px 130px 10px 10px;
             "
           >
             <div>
@@ -370,7 +372,7 @@
               border-color: beige;
               border: groove;
               border-radius: 5px;
-              padding: 10px 193px 10px 10px;
+              padding: 10px 220px 10px 10px;
             "
           >
             <div>
@@ -382,7 +384,7 @@
           </div>
         </div>
       </div>
-      <button>Join Managers community</button> <br />
+      <button style="margin-top: 10px">Join Managers community</button> <br />
     </section>
 
     <section id="SECTION5">
@@ -464,6 +466,7 @@
             type="text"
             required
             placeholder="Your Name"
+            style="text-align: left; padding-right: 140px; border-radius: 5px"
           /><br />
         </label>
         <!-- <label for="Name">Name</label> <br /> -->
@@ -471,7 +474,15 @@
         <!-- <label for="Email">Email</label><br /> -->
         <label>
           Email <br />
-          <input type="email" required placeholder="Your Email" /><br
+          <input
+            type="email"
+            required
+            placeholder="Your Email"
+            style="
+              text-align: left;
+              padding-right: 140px;
+              border-radius: 5px;
+            " /><br
         /></label>
         <!-- <input type="email" required placeholder="Your Email" /><br /> -->
         <!-- <label for="Message">Message</label> <br /> -->
@@ -482,12 +493,17 @@
             name="text"
             id="txt"
             placeholder="Your Message"
-            style="padding-bottom: 60px" />
+            style="
+              padding-bottom: 60px;
+              text-align: left;
+              padding-right: 140px;
+              border-radius: 5px;
+            " />
           <br
         /></label>
         <!-- <input type="text" name="text" id="txt" placeholder="Your Message" />
        <br /> -->
-        <button>Submit</button>
+        <button style="margin-top: 8px">Submit</button>
       </form>
       <p style="margin-left: 550px">
         © 2024 Your Competitive Programming Platform. All rights reserved.
@@ -501,6 +517,7 @@
         box-sizing: border-box;
         font-family: Overpass;
         overflow-x: hidden;
+        text-decoration: none;
       }
 
       body {
@@ -595,9 +612,17 @@
         border-radius: 5px;
       }
 
+      #coder_button {
+        padding: 10px;
+        background-color: #8053ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
       h4 {
-        font-size: 25px;
-        padding-left: 78px;
+        font-size: 35px;
+        padding-left: 50px;
         padding-bottom: 20px;
         color: #8053ff;
       }
