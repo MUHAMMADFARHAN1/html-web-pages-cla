@@ -14,19 +14,17 @@
   <body>
     <header id="HEADER">
       <nav id="NAVBAR">
-        <div style="display: flex; flex-direction: row">
-          <img src="./assets/logo.svg" alt="logo" style="margin-top: 10px" />
-          <p style="padding-top: 28px; font-size: 20px">CLA</p>
+        <div id="NAV_Div1">
+          <img src="./assets/logo.svg" alt="logo" id="NAV_Logo_1" />
+          <p id="NAV_Logo_2">CLA</p>
         </div>
-        <div style="padding-top: 22px; padding-left: 920px">
-          <a href="./Signup_Page.html" style="padding-right: 40px">For Coders</a
+        <div id="NAV_Div2">
+          <a href="./Signup_Page.html" id="NAV_Space">For Coders</a
           ><a href="./Signin_Page.html">For Developers</a>
         </div>
         <div>
           <a href="./Signup_Page.html"
-            ><button style="margin-top: 18px; padding: 10px 20px 10px 20px">
-              Join Now
-            </button></a
+            ><button id="NAV_button">Join Now</button></a
           >
         </div>
       </nav>
@@ -541,6 +539,34 @@
         height: 80px;
         margin-left: 40px;
         margin-right: 115px;
+      }
+
+      #NAV_Div1 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #NAV_Logo_1 {
+        margin-top: 10px;
+      }
+
+      #NAV_Logo_2 {
+        padding-top: 28px;
+        font-size: 20px;
+      }
+
+      #NAV_Div2 {
+        padding-top: 22px;
+        padding-left: 920px;
+      }
+
+      #NAV_Space {
+        padding-right: 40px;
+      }
+
+      #NAV_button {
+        margin-top: 18px;
+        padding: 10px 20px 10px 20px;
       }
 
       #HERO {
