@@ -13,21 +13,17 @@
   </head>
   <body>
     <header id="HEADER">
-      <nav id="NAVBAR">
-        <div id="NAV_Div1">
-          <img src="./assets/logo.svg" alt="logo" id="NAV_Logo_1" />
-          <p id="NAV_Logo_2">CLA</p>
-        </div>
-        <div id="NAV_Div2">
-          <a href="./Signup_Page.html" id="NAV_Space">For Coders</a
-          ><a href="./Signin_Page.html" id="NAV_Space2">For Developers</a>
-          <!-- </div> -->
-          <!-- <div> -->
-          <a href="./Signup_Page.html"
-            ><button id="NAV_button">Join Now</button></a
-          >
-        </div>
-      </nav>
+      <div id="NAV_Div1">
+        <img src="./assets/logo.svg" alt="logo" id="NAV_Logo_1" />
+        <p id="NAV_Logo_2">CLA</p>
+      </div>
+      <div id="NAV_Div2">
+        <a href="./Signup_Page.html" id="NAV_Space">For Coders</a
+        ><a href="./Signin_Page.html" id="NAV_Space2">For Developers</a>
+        <a href="./Signup_Page.html"
+          ><button id="NAV_button">Join Now</button></a
+        >
+      </div>
     </header>
 
     <main id="HERO">
@@ -483,7 +479,7 @@
       }
 
       #HEADER {
-        height: 80px;
+        height: 140px;
         margin-left: 40px;
         margin-right: 115px;
       }
@@ -491,6 +487,7 @@
       #NAV_Div1 {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
       }
 
       #NAV_Logo_1 {
@@ -498,13 +495,12 @@
       }
 
       #NAV_Logo_2 {
-        padding-top: 28px;
+        padding-top: 8px;
         font-size: 20px;
       }
 
       #NAV_Div2 {
-        padding-top: 22px;
-        padding-left: 920px;
+        padding-left: 1000px;
       }
 
       #NAV_Space {
@@ -516,7 +512,7 @@
       }
 
       #NAV_button {
-        margin-top: 9px;
+        margin-top: 1px;
         padding: 10px 20px 10px 20px;
       }
 
@@ -655,14 +651,9 @@
 
       @media screen and (max-width: 992px) {
         #HEADER {
-          height: 100px;
           margin-left: 5px;
           margin-right: 5px;
-        }
-
-        #NAV {
-          display: flex;
-          flex-direction: column;
+          height: 140px;
         }
 
         #NAV_Div1 {
@@ -672,6 +663,7 @@
 
         #NAV_Logo_1 {
           margin-top: 10px;
+          padding-left: 180px;
         }
 
         #NAV_Logo_2 {
@@ -681,7 +673,7 @@
 
         #NAV_Div2 {
           padding-top: 2px;
-          padding-left: 0px;
+          padding-left: 60px;
         }
 
         #NAV_Space {
