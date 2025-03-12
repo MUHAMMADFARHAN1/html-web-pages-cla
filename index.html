@@ -33,13 +33,13 @@
     </header>
 
     <main id="HERO">
-      <h1 style="margin-left: 400px">The Place for Competitive Programmers</h1>
-      <p style="margin-left: 160px">
+      <h1 id="hero_h1">The Place for Competitive Programmers</h1>
+      <p id="hero_p">
         CodeCLA is where programmers participate in programming contests, solve
         algorithms and data structure challenges and become a part of an awesome
         community
       </p>
-      <div style="display: flex; flex-direction: row; margin-left: 580px">
+      <div id="hero_div">
         <a href="./Signup_Page.html">
           <input
             type="button"
@@ -554,6 +554,20 @@
         gap: 15px;
       }
 
+      #hero_h1 {
+        margin-left: 400px;
+      }
+
+      #hero_p {
+        margin-left: 160px;
+      }
+
+      #hero_div {
+        display: flex;
+        flex-direction: row;
+        margin-left: 580px;
+      }
+
       #SECTION2 {
         height: 340px;
         background-color: #f4f4f4;
@@ -596,12 +610,19 @@
         margin-top: 40px;
       }
 
+      .foot {
+        margin-left: 10px;
+        margin-top: 25px;
+        text-align: center;
+      }
+
       @media screen and (max-width: 992px) {
         #HEADER {
           height: 100px;
           margin-left: 40px;
           margin-right: 115px;
         }
+
         #HERO {
           height: 600px;
           display: flex;
