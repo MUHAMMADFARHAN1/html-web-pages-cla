@@ -31,7 +31,9 @@
     </header>
 
     <main id="HERO">
-      <h1 id="hero_h1">The Place for Competitive Programmers</h1>
+      <h1 id="hero_h1">
+        The Place for <span> Competitive </span> <span>Programmers</span>
+      </h1>
       <p id="hero_p">
         CodeCLA is where programmers participate in programming contests, solve
         algorithms and data structure challenges and become a part of an awesome
@@ -650,24 +652,130 @@
       @media screen and (max-width: 992px) {
         #HEADER {
           height: 100px;
-          margin-left: 40px;
-          margin-right: 115px;
+          margin-left: 20px;
+          margin-right: 40px;
+        }
+
+        #NAV_Div1 {
+          display: flex;
+          flex-direction: row;
+        }
+
+        #NAV_Logo_1 {
+          margin-top: 10px;
+        }
+
+        #NAV_Logo_2 {
+          padding-top: 28px;
+          font-size: 20px;
+        }
+
+        #NAV_Div2 {
+          padding-top: 22px;
+          padding-left: 20px;
+        }
+
+        #NAV_Space {
+          padding-right: 20px;
+        }
+
+        #NAV_button {
+          margin-top: 18px;
+          padding: 10px 20px 10px 20px;
         }
 
         #HERO {
-          height: 600px;
+          height: 300px;
           display: flex;
           flex-direction: column;
           background-color: #f4f4f4;
           background-image: url("assets/bg.svg");
-          margin-left: 50px;
+          margin-left: 10px;
           margin-top: 120px;
           gap: 15px;
+        }
+
+        #hero_h1 {
+          margin-left: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+        }
+
+        #hero_p {
+          margin-left: 1px;
+          text-align: center;
+        }
+
+        #hero_div {
+          display: flex;
+          flex-direction: row;
+          margin-left: 580px;
         }
 
         #SECTION2 {
           height: 640px;
           background-color: #f4f4f4;
+        }
+
+        #SEC2_H3 {
+          margin-left: 690px;
+          padding-bottom: 20px;
+        }
+
+        #SEC2_MAIN_FLEX {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin-left: 415px;
+        }
+
+        #SEC2_FIRST_FLEX {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+
+        #SEC2_BOX1 {
+          background-color: white;
+          padding: 20px 100px 20px 100px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        #SEC2_BOX2 {
+          background-color: white;
+          padding: 20px 140px 20px 140px;
+          margin-left: 10px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        #SEC2_MAIN_GRID {
+          display: grid;
+          gap: 30px;
+          grid-template-columns: 356px 328px;
+          grid-template-rows: 160px;
+        }
+
+        #SEC2_BOX3 {
+          background-color: white;
+          margin-bottom: 80px;
+          padding-left: 90px;
+          padding-top: 20px;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        #SEC2_BOX4 {
+          background-color: white;
+          margin-bottom: 55px;
+          padding-left: 115px;
+          padding-top: 20px;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
 
         #SECTION3 {
