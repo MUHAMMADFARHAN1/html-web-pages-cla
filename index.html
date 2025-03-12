@@ -20,9 +20,9 @@
         </div>
         <div id="NAV_Div2">
           <a href="./Signup_Page.html" id="NAV_Space">For Coders</a
-          ><a href="./Signin_Page.html">For Developers</a>
-        </div>
-        <div>
+          ><a href="./Signin_Page.html" id="NAV_Space2">For Developers</a>
+          <!-- </div> -->
+          <!-- <div> -->
           <a href="./Signup_Page.html"
             ><button id="NAV_button">Join Now</button></a
           >
@@ -511,8 +511,12 @@
         padding-right: 40px;
       }
 
+      #NAV_Space2 {
+        padding-right: 20px;
+      }
+
       #NAV_button {
-        margin-top: 18px;
+        margin-top: 9px;
         padding: 10px 20px 10px 20px;
       }
 
@@ -652,8 +656,13 @@
       @media screen and (max-width: 992px) {
         #HEADER {
           height: 100px;
-          margin-left: 20px;
-          margin-right: 40px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        #NAV {
+          display: flex;
+          flex-direction: column;
         }
 
         #NAV_Div1 {
@@ -671,8 +680,8 @@
         }
 
         #NAV_Div2 {
-          padding-top: 22px;
-          padding-left: 20px;
+          padding-top: 2px;
+          padding-left: 0px;
         }
 
         #NAV_Space {
