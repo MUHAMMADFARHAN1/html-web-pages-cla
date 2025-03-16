@@ -6,23 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div style="display: flex; flex-direction: row">
+    <div id="FirstF">
       <div id="First">
         <img src="./assets/coding.png" alt="coding guy" width="350" />
       </div>
       <div id="Second">
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            width: 40%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin: 150px 10px 10px 220px;
-            gap: 10px;
-          "
-        >
+        <div>
           <h2 style="margin-left: 55px">Join Coders Now!</h2>
           <form
             action=""
@@ -71,6 +60,11 @@
         overflow-x: hidden;
       }
 
+      #FirstF {
+        display: flex;
+        flex-direction: row;
+      }
+
       #First {
         width: 50%;
         height: 729px;
@@ -79,6 +73,16 @@
 
       #Second {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 20%;
+        height: 45%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        margin: 150px 10px 10px 220px;
+        gap: 10px;
       }
 
       img {
@@ -99,6 +103,38 @@
 
       button {
         padding: 5px;
+      }
+
+      @media screen and (max-width: 992px) {
+        #FirstF {
+          display: flex;
+          flex-direction: column;
+        }
+
+        #First {
+          width: 100%;
+          height: 429px;
+          background-color: #23155b;
+        }
+
+        img {
+          margin-left: 45px;
+          margin-top: 15px;
+        }
+
+        #Second {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          width: 70%;
+          height: 45%;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          padding-right: 20px;
+          margin: 50px 10px 60px 70px;
+          gap: 10px;
+        }
       }
     </style>
   </body>
