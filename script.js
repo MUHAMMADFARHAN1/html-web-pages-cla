@@ -32,3 +32,37 @@ const data = [
     text: "As a seasoned programmer, I'm always on the lookout for platforms that challenge and inspire me. This platform exceeds all expectations with its vast array of problems and unparalleled learning resources. Whether you're a novice or a seasoned coder, you'll find endless opportunities to push your boundaries and elevate your skills.",
   },
 ];
+
+///////////Testimonial manual state management//////////////
+let testimonial_State = 0;
+
+const update_testimonial = () => {
+  if (testimonial_State == 4) {
+    testimonial_State = 0;
+  } else {
+    testimonial_State += 1;
+  }
+
+  switch (update_testimonial) {
+    case 0:
+      break;
+    case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+  }
+};
+
+////////Here i will use event handler////////////
+
+/////////Set Interval invocation///////////////
+
+
+
+
+
+//////////
