@@ -109,8 +109,5 @@ const update_testimonial = () => {
   }
 };
 
-////////Here i will use event handler but atm Event Listener only////////////
-
-/////////Set Interval invocation///////////////
-
-//////////
+/////////Set Interval invocation, event handlers are in fucntions///////////////
+setInterval(Testimonial_Forward, 3000);
