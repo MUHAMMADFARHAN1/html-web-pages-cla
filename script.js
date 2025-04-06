@@ -122,6 +122,9 @@ year.innerText = date.getFullYear();
 //function here
 
 //Ask Omar why HTML5 required blocks event processing here
+const first_error = document.querySelector("#first_error");
+const second_error = document.querySelector("#second_error");
+const third_error = document.querySelector("#third_error");
 
 const submit = (event) => {
   event.preventDefault();
@@ -158,3 +161,18 @@ const submit = (event) => {
 //The event argument is implicitly passed to the event listener here
 document.querySelector("#formm").addEventListener("submit", submit);
 // console.log("hello");
+
+//Event handlers for onclick forms events
+//These event handlers rather than event listeners will clear
+//the error warnings
+const message_vanish_name = () => {
+  first_error.style.display = "none";
+};
+
+const message_vanish_email = () => {
+  second_error.style.display = "none";
+};
+
+const message_vanish_message = () => {
+  third_error.style.display = "none";
+};
