@@ -128,6 +128,12 @@ const third_error = document.querySelector("#third_error");
 
 const submit = (event) => {
   event.preventDefault();
+  // Swal.fire({
+  //   title: "Good job!",
+  //   text: "You clicked the button!",
+  //   icon: "success",
+  // });
+  let error = 0;
 
   const form_name = document.querySelector("#form_name").value;
   const form_email = document.querySelector("#form_email").value;
@@ -141,20 +147,31 @@ const submit = (event) => {
 
   if (form_name === "") {
     first_error.style.display = "block";
+    error = 1;
   } else {
     first_error.style.display = "none";
+    error = 0;
   }
 
   if (form_email === "") {
     second_error.style.display = "block";
+    error = 1;
   } else {
     second_error.style.display = "none";
+    error = 0;
   }
 
   if (form_message === "") {
     third_error.style.display = "block";
+    error = 1;
   } else {
     third_error.style.display = "none";
+    error = 0;
+  }
+
+  if (error == 0) {
+    SubmitFunction();
+    event.currentTarget.submit();
   }
 };
 
@@ -175,4 +192,8 @@ const message_vanish_email = () => {
 
 const message_vanish_message = () => {
   third_error.style.display = "none";
+};
+
+const SubmitFunction = () => {
+  Swal.fire("SweetAlert2 is working!");
 };
