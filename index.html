@@ -324,13 +324,12 @@
           Name <br /><input
             type="text"
             id="form_name"
-            required
             placeholder="Your Name"
             style="text-align: left; padding-right: 140px; border-radius: 5px"
           /><br />
           <p
             id="first_error"
-            style="color: red; font-size: small; display: block"
+            style="color: red; font-size: small; display: none"
           >
             Name is required
           </p>
@@ -343,11 +342,13 @@
           <input
             type="email"
             id="form_email"
-            required
             placeholder="Your Email"
             style="text-align: left; padding-right: 140px; border-radius: 5px"
           /><br />
-          <p style="color: red; font-size: small; display: block">
+          <p
+            id="second_error"
+            style="color: red; font-size: small; display: none"
+          >
             Email is required
           </p>
         </label>
@@ -368,7 +369,10 @@
             "
           />
           <br />
-          <p style="color: red; font-size: small; display: block">
+          <p
+            id="third_error"
+            style="color: red; font-size: small; display: none"
+          >
             Message is required
           </p>
         </label>

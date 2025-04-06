@@ -121,6 +121,8 @@ year.innerText = date.getFullYear();
 ///For Forms we need to use event listener as event handler will not
 //function here
 
+//Ask Omar why HTML5 required blocks event processing here
+
 const submit = (event) => {
   event.preventDefault();
 
@@ -128,15 +130,31 @@ const submit = (event) => {
   const form_email = document.querySelector("#form_email").value;
   const form_message = document.querySelector("#txt").value;
 
-  const first_error = document.querySelector("#first_error").value;
+  const first_error = document.querySelector("#first_error");
+  const second_error = document.querySelector("#second_error");
+  const third_error = document.querySelector("#third_error");
 
-  console.log("hello2");
+  // console.log("hello2");
 
   if (form_name === "") {
+    first_error.style.display = "block";
+  } else {
     first_error.style.display = "none";
+  }
+
+  if (form_email === "") {
+    second_error.style.display = "block";
+  } else {
+    second_error.style.display = "none";
+  }
+
+  if (form_message === "") {
+    third_error.style.display = "block";
+  } else {
+    third_error.style.display = "none";
   }
 };
 
 //The event argument is implicitly passed to the event listener here
 document.querySelector("#formm").addEventListener("submit", submit);
-console.log("hello");
+// console.log("hello");
