@@ -171,7 +171,10 @@ const submit = (event) => {
 
   if (error == 0) {
     SubmitFunction();
-    event.currentTarget.submit();
+    //It is not needed here
+    //Preventing default
+    //https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
+    // event.currentTarget.submit();
   }
 };
 
@@ -195,5 +198,5 @@ const message_vanish_message = () => {
 };
 
 const SubmitFunction = () => {
-  Swal.fire("SweetAlert2 is working!");
+  Swal.fire("Form Successfully Submitted!");
 };
