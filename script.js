@@ -59,10 +59,7 @@ let photo = document.getElementById("SPic");
 let Pname = document.getElementById("name");
 let title = document.getElementById("designation");
 let tab = document.getElementById("toggle");
-let back = document.getElementById("Backward");
-
-// back.addEventListener("click", Testimonial_Forward);
-title.innnerHTML = "rytgedfg";
+// let back = document.getElementById("Backward");
 
 ///////////Testimonial manual state management////////////////////
 let testimonial_State = 0;
@@ -71,23 +68,43 @@ const update_testimonial = () => {
   switch (testimonial_State) {
     case 0:
       // Pname.innnerHTML = data[0].name;
-      Pname.innnerHTML = "rytgedfg";
+      Pname.innerText = `${data[0].name}`;
+      photo.src = data[0].photo;
+      title.innerText = data[0].position;
+      review.innerText = data[0].text;
+      tab.innerText = `●○○○○`;
       break;
     case 1:
       // Pname.innnerHTML = data[1].name;
-      Pname.innnerHTML = "23";
+      Pname.innerText = data[1].name;
+      photo.src = data[1].photo;
+      title.innerText = data[1].position;
+      review.innerText = data[1].text;
+      tab.innerText = `○●○○○`;
       break;
     case 2:
       // Pname.innnerHTML = data[2].name;
-      Pname.innnerHTML = "78";
+      Pname.innerText = data[2].name;
+      photo.src = data[2].photo;
+      title.innerText = data[2].position;
+      review.innerText = data[2].text;
+      tab.innerText = `○○●○○`;
       break;
     case 3:
       // Pname.innnerHTML = data[3].name;
-      Pname.innnerHTML = "42";
+      Pname.innerText = data[3].name;
+      photo.src = data[3].photo;
+      title.innerText = data[3].position;
+      review.innerText = data[3].text;
+      tab.innerText = `○○○●○`;
       break;
     case 4:
       // Pname.innnerHTML = data[4].name;
-      Pname.innnerHTML = "12";
+      Pname.innerText = data[4].name;
+      photo.src = data[4].photo;
+      title.innerText = data[4].position;
+      review.innerText = data[4].text;
+      tab.innerText = `○○○○●`;
       break;
   }
 };
