@@ -111,3 +111,8 @@ const update_testimonial = () => {
 
 /////////Set Interval invocation, event handlers are in fucntions///////////////
 setInterval(Testimonial_Forward, 3000);
+
+////////Setting the Date Dznamically on the object//////////////////////
+let date = new Date();
+let year = document.getElementById("Date");
+year.innerText = date.getFullYear();
