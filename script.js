@@ -33,36 +33,67 @@ const data = [
   },
 ];
 
-///////////Testimonial manual state management//////////////
-let testimonial_State = 0;
-
-const update_testimonial = () => {
+const Testimonial_Forward = () => {
   if (testimonial_State == 4) {
     testimonial_State = 0;
   } else {
     testimonial_State += 1;
   }
+  update_testimonial();
+  console.log(testimonial_State);
+};
 
-  switch (update_testimonial) {
+const Testimonial_Backward = () => {
+  if (testimonial_State == 0) {
+    testimonial_State = 4;
+  } else {
+    testimonial_State -= 1;
+  }
+  update_testimonial();
+  console.log(testimonial_State);
+};
+
+/////////////////////Document Query Selectors by ID/////////////////////
+let review = document.getElementById("Comment");
+let photo = document.getElementById("SPic");
+let Pname = document.getElementById("name");
+let title = document.getElementById("designation");
+let tab = document.getElementById("toggle");
+let back = document.getElementById("Backward");
+
+// back.addEventListener("click", Testimonial_Forward);
+title.innnerHTML = "rytgedfg";
+
+///////////Testimonial manual state management////////////////////
+let testimonial_State = 0;
+
+const update_testimonial = () => {
+  switch (testimonial_State) {
     case 0:
+      // Pname.innnerHTML = data[0].name;
+      Pname.innnerHTML = "rytgedfg";
       break;
     case 1:
+      // Pname.innnerHTML = data[1].name;
+      Pname.innnerHTML = "23";
       break;
     case 2:
+      // Pname.innnerHTML = data[2].name;
+      Pname.innnerHTML = "78";
       break;
     case 3:
+      // Pname.innnerHTML = data[3].name;
+      Pname.innnerHTML = "42";
       break;
     case 4:
+      // Pname.innnerHTML = data[4].name;
+      Pname.innnerHTML = "12";
       break;
   }
 };
 
-////////Here i will use event handler////////////
+////////Here i will use event handler but atm Event Listener only////////////
 
 /////////Set Interval invocation///////////////
-
-
-
-
 
 //////////

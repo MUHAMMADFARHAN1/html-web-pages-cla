@@ -264,7 +264,13 @@
     <section id="SECTION6">
       <h4>Testimonials</h4>
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
-        <img src="./assets/images.png" alt="" width="40px" />
+        <img
+          id="Backward"
+          onclick="Testimonial_Backward()"
+          src="./assets/images.png"
+          alt=""
+          width="40px"
+        />
         <div
           style="
             background-color: white;
@@ -275,8 +281,8 @@
           "
         >
           <div style="text-align: center">
-            <p style="padding-bottom: 30px">★★★★★</p>
-            <p>
+            <p id="stars" style="padding-bottom: 30px">★★★★★</p>
+            <p id="Comment">
               This platform is an absolute game-changer for competitive
               programmers. The extensive range of problems and challenges
               offered here truly hones your skills and prepares you for any
@@ -286,20 +292,27 @@
             </p>
             <div style="padding: 20px 70px 20px 80px">
               <img
+                id="SPic"
                 src="https://randomuser.me/api/portraits/women/44.jpg"
                 alt="june pic"
                 style="border-radius: 80px"
                 width="50px"
               />
-              <p><b>June Cha</b></p>
+              <p id="name"><b>June Cha</b></p>
               <div>
-                <p>Software Engineer</p>
+                <p id="designation">Software Engineer</p>
               </div>
             </div>
-            <p style="padding-left: 12px">●○○○○</p>
+            <p id="toggle" style="padding-left: 12px">●○○○○</p>
           </div>
         </div>
-        <img src="./assets/next.png" alt="" width="40px" />
+        <img
+          id="Forward"
+          onclick="Testimonial_Forward()"
+          src="./assets/next.png"
+          alt=""
+          width="40px"
+        />
       </div>
     </section>
 
