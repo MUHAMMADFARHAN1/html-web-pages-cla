@@ -197,6 +197,15 @@ const message_vanish_message = () => {
   third_error.style.display = "none";
 };
 
+//The alert here needs some mdofiication to get
+//better
 const SubmitFunction = () => {
-  Swal.fire("Form Successfully Submitted!");
+  // Swal.fire("Form Successfully Submitted!");
+  Swal.fire({
+    title: "Thank you for reaching out!",
+    text: "Form Submitted Successfully",
+    // icon: "success",
+    // iconColor: "black",
+    theme: "dark",
+  });
 };
