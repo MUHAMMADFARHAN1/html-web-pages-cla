@@ -319,14 +319,21 @@
     <footer id="FOOTER">
       <h2 style="margin-left: 80px; padding-top: 40px">Contact us</h2>
       <!-- Implicit an dExplicit input change -->
-      <form action="" style="margin-left: 85px; margin-top: 10px">
+      <form id="formm" action="" style="margin-left: 85px; margin-top: 10px">
         <label>
           Name <br /><input
             type="text"
+            id="form_name"
             required
             placeholder="Your Name"
             style="text-align: left; padding-right: 140px; border-radius: 5px"
           /><br />
+          <p
+            id="first_error"
+            style="color: red; font-size: small; display: block"
+          >
+            Name is required
+          </p>
         </label>
         <!-- <label for="Name">Name</label> <br /> -->
         <!-- <input type="text" required placeholder="Your Name" /><br /> -->
@@ -335,14 +342,15 @@
           Email <br />
           <input
             type="email"
+            id="form_email"
             required
             placeholder="Your Email"
-            style="
-              text-align: left;
-              padding-right: 140px;
-              border-radius: 5px;
-            " /><br
-        /></label>
+            style="text-align: left; padding-right: 140px; border-radius: 5px"
+          /><br />
+          <p style="color: red; font-size: small; display: block">
+            Email is required
+          </p>
+        </label>
         <!-- <input type="email" required placeholder="Your Email" /><br /> -->
         <!-- <label for="Message">Message</label> <br /> -->
         <label>
@@ -357,9 +365,13 @@
               text-align: left;
               padding-right: 140px;
               border-radius: 5px;
-            " />
-          <br
-        /></label>
+            "
+          />
+          <br />
+          <p style="color: red; font-size: small; display: block">
+            Message is required
+          </p>
+        </label>
         <!-- <input type="text" name="text" id="txt" placeholder="Your Message" />
        <br /> -->
         <button style="margin-top: 8px">Submit</button>

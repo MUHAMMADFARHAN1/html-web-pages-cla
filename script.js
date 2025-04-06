@@ -112,7 +112,31 @@ const update_testimonial = () => {
 /////////Set Interval invocation, event handlers are in fucntions///////////////
 setInterval(Testimonial_Forward, 3000);
 
-////////Setting the Date Dznamically on the object//////////////////////
+////////Setting the Date Dynamically on the object//////////////////////
 let date = new Date();
 let year = document.getElementById("Date");
 year.innerText = date.getFullYear();
+
+////////////////////////Form Display/////////////////////////////////
+///For Forms we need to use event listener as event handler will not
+//function here
+
+const submit = (event) => {
+  event.preventDefault();
+
+  const form_name = document.querySelector("#form_name").value;
+  const form_email = document.querySelector("#form_email").value;
+  const form_message = document.querySelector("#txt").value;
+
+  const first_error = document.querySelector("#first_error").value;
+
+  console.log("hello2");
+
+  if (form_name === "") {
+    first_error.style.display = "none";
+  }
+};
+
+//The event argument is implicitly passed to the event listener here
+document.querySelector("#formm").addEventListener("submit", submit);
+console.log("hello");
