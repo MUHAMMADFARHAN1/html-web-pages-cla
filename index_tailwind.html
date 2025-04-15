@@ -14,23 +14,26 @@
       @theme {
         /* 1. Fonts */
         --font-serif: "Overpass";
+        --breakpoint-xs: 20rem;
       }
     </style>
     <title>Document</title>
   </head>
   <body class="bg-[#f4f4f4] font-serif">
     <header class="flex h-42 flex-row flex-wrap ml-6">
-      <div class="flex">
+      <div class="flex xs:relative xs:left-[160px] 2xl:">
         <img src="./assets/logo.svg" alt="logo" width="50px" />
-        <p class="mt-18">CLA</p>
+        <p class="mt-18 xs:relative xs:bottom-[35px]">CLA</p>
       </div>
-      <div class="ml-[1050px] pt-16">
+      <div
+        class="2xl:ml-[1050px] xs:ml-[20px] xs:relative xs:top-[100px] 2xl:top-[0px] xs:right-[130px] pt-16"
+      >
         <a href="./Signup_Page.html" class="m-11">For Coders</a
         ><a href="./Signin_Page.html">For Developers</a>
       </div>
       <a href="./Signup_Page.html"
         ><button
-          class="bg-[#8053ff] px-4 py-3 rounded-lg m-4 text-sm text-white ml-[40px] mt-14"
+          class="bg-[#8053ff] px-4 py-3 rounded-lg m-4 text-sm text-white ml-[40px] xs:mt-14 2xl:ml-[1300px] xs:ml-[270px] 2xl:relative 2xl:bottom-24"
         >
           Join Now
         </button></a
@@ -38,10 +41,10 @@
     </header>
 
     <main class="bg-[url('assets/bg.svg')] h-[300px]">
-      <h3 class="ml-[430px] pt-26 text-4xl font-bold">
+      <h3 class="2xl:ml-[430px] xs:ml-[120px] pt-26 text-4xl font-bold">
         The Place for <span> Competitive </span> <span>Programmers</span>
       </h3>
-      <p class="ml-[200px]">
+      <p class="2xl:ml-[200px] text-center xs:ml-[10px]">
         CodeCLA is where programmers participate in programming contests, solve
         algorithms and data structure challenges and become a part of an awesome
         community
@@ -50,7 +53,7 @@
         <input type="button" name="button" value="Become a coder"
       /></a> -->
       <button
-        class="bg-[#8053ff] px-4 py-1 rounded-lg m-7 text-sm text-white ml-[600px]"
+        class="bg-[#8053ff] px-4 py-1 rounded-lg 2xl:m-7 xs:m-1 text-sm text-white 2xl:ml-[600px] xs:ml-[65px]"
       >
         <a href="./Signup_Page.html"> Become a coder </a>
       </button>
@@ -61,26 +64,36 @@
       </button>
     </main>
     <section class="h-82">
-      <h3 class="ml-[700px] mb-[20px] text-2xl text-[#8053ff] font-bold">
+      <h3
+        class="2xl:ml-[700px] 2xl:mb-[20px] text-2xl text-[#8053ff] font-bold xs:mt-[80px] xs:ml-[120px]"
+      >
         Practice to level-up
       </h3>
 
-      <div class="flex gap-10 ml-[400px]">
+      <div class="flex 2xl:gap-10 2xl:ml-[400px] xs:gap-5 xs:ml-[30px]">
         <div class="flex gap-5 flex-col">
-          <div class="bg-white pl-24 pr-24 p-5 shadow-xl rounded-[10px]">
+          <div
+            class="bg-white 2xl:pl-24 2xl:pr-24 p-5 shadow-xl rounded-[10px]"
+          >
             <span class="ml-22">1K</span> <br />Problems for Practice <br />
           </div>
-          <div class="bg-white pl-24 pr-24 p-5 shadow-xl rounded-[10px]">
+          <div
+            class="bg-white 2xl:pl-24 2xl:pr-24 p-5 shadow-xl rounded-[10px]"
+          >
             <span class="ml-22">10</span> <br />
             Programming Languages <br />
           </div>
         </div>
         <div class="flex gap-5 flex-col">
-          <div class="bg-white pl-26 pr-32 p-5 shadow-xl rounded-[10px]">
+          <div
+            class="bg-white 2xl:pl-26 2xl:pr-32 p-5 shadow-xl rounded-[10px]"
+          >
             <span class="ml-1">100+</span> <br />
             Coders <br />
           </div>
-          <div class="bg-white pl-26 pr-40 p-5 pb-12 shadow-xl rounded-[10px]">
+          <div
+            class="bg-white 2xl:pl-26 2xl:pr-40 p-5 pb-12 shadow-xl rounded-[10px]"
+          >
             <span class="ml-6">130K</span> <br />
             Submissions
           </div>
