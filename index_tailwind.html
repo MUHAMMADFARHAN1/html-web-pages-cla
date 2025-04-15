@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section class="h-[450px] ml-6">
+    <section class="2xl:h-[450px] ml-6">
       <h3 class="text-[#8053ff] font-bold text-2xl">For coders</h3>
       <h3 class="font-bold text-4xl">
         What you will <span class="text-[#8053ff] font-bold">gain</span>
@@ -178,7 +178,7 @@
       </a>
     </section>
 
-    <section class="h-96 ml-6">
+    <section class="2xl:h-96 ml-6">
       <h3 class="text-[#8053ff] font-bold text-2xl">For managers</h3>
       <h3 class="font-bold text-4xl">
         Access
@@ -189,7 +189,7 @@
       <div class="flex 2xl:flex-row xs:flex-col gap-5">
         <div class="flex flex-col gap-5">
           <div
-            class="flex flex-row border border-solid border-gray-300 shadow-xl pr-[200px] pb-3 pt-3 pl-3 rounded-[10px]"
+            class="flex flex-row border border-solid border-gray-300 shadow-xl 2xl:pr-[200px] pb-3 pt-3 pl-3 rounded-[10px]"
           >
             <img src="./assets/ok.svg" alt="" width="20px" />
             <p class="ml-2">
@@ -247,16 +247,16 @@
       </button>
     </section>
 
-    <section class="grid grid-cols-3">
-      <div class="col-span-1">
+    <section class="2xl:grid 2xl:grid-cols-3">
+      <div class="2xl:col-span-1">
         <img
           src="./assets/team.svg"
-          class="rounded-tr-[100px] rounded-br-[100px]"
+          class="2xl:rounded-tr-[100px] 2xl:rounded-br-[100px] xs:rounded-[100px] xs:h-[500px] xs:ml-[40px]"
           alt=""
         />
       </div>
-      <div class="col-span-2 ml-13">
-        <img src="./assets/logo.svg" alt="Logo" />
+      <div class="2xl:col-span-2 ml-13">
+        <img src="./assets/logo.svg" class="xs:ml-[130px]" alt="Logo" />
         <h3 class="text-[#8053ff] text-2xl font-bold">Brought to you by CLA</h3>
         <p>
           Join the Ultimate Hub for Competitive Programmers and reach growth and
@@ -268,13 +268,15 @@
         </p>
       </div>
     </section>
-
+    <!-- tailwind goes from lowest break point to highest breakpoint always -->
     <section class="h-[700px]">
-      <h3 class="2xl:ml-[750px] text-[#8053ff] text-4xl 2xl:mt-12 font-bold">
+      <h3
+        class="2xl:ml-[750px] text-[#8053ff] text-4xl 2xl:mt-12 font-bold xs:mt-[40px] xs:ml-[110px]"
+      >
         Testimonials
       </h3>
       <div
-        class="w-[300px] bg-white h-[500px] 2xl:ml-[710px] 2xl:mt-[80px] pt-1 rounded-[30px] pr-5 pl-5"
+        class="w-[300px] bg-white h-[500px] 2xl:ml-[710px] 2xl:mt-[80px] pt-1 rounded-[30px] pr-5 pl-5 xs:mt-[80px] xs:ml-[80px]"
       >
         <p class="ml-25 mb-5 mt-6">★★★★★</p>
         <p class="text-center">
